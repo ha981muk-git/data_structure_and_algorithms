@@ -9,15 +9,17 @@ double hoch( double num, int exp){
     temp *=num;
     }
 */ // Use either for-Schleife or While-Schleife , both works
-    while (exp>0)
-    {
+    while (exp!=0){
+      if(exp>0){
         temp*=num;
         exp--;
-    }
-     while (exp<0)
-    {
+    } else if (exp<0){
+        
         temp*=1/num;
         exp++;
+    }
+    
+   
     }
     
 
