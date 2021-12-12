@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <unistd.h>
 #include <sys/types.h>
 
 unsigned int countBits(unsigned long long n){
@@ -36,8 +37,12 @@ unsigned int countBits(unsigned long long n){
 }
 
 int main()
-{   fork();
+{  // fork();
     printf("%i\n",countBits(6));
+    printf("%i\n",countBits(9));
+    printf("%i\n",countBits(8));
+    printf("%i\n",countBits(7));
+    printf("%i\n",countBits(15));
     return 0;
 
 }
